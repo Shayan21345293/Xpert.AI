@@ -4,6 +4,10 @@ import google.generativeai as genai
 # Load API key from Streamlit secrets
 api_key = st.secrets.get("GEMINI_API_KEY")
 
+st.set_page_config(
+    page_title="Xpert.AI 🤖",       
+    page_icon="🤖",             
+    layout="centered",
 # Setup
 if not api_key:
     st.error("Gemini API key not found. Please add it to .streamlit/secrets.toml")
