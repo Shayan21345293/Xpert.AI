@@ -7,7 +7,7 @@ api_key = st.secrets.get("GEMINI_API_KEY")
 st.set_page_config(
     page_title="Xpert.AI 🤖",       
     page_icon="🤖",             
-    layout="centered",
+    layout="centered",)
 # Setup
 if not api_key:
     st.error("Gemini API key not found. Please add it to .streamlit/secrets.toml")
